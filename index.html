@@ -6,19 +6,203 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kasper</title>
-    <!-- LInking to our style sheet -->
-    <link rel="stylesheet" href="css/style.css">
     <!-- Linking to the file that enables us to use the awesome font icons -->
     <link rel="stylesheet" href="css/all.min.css">
+    <!-- Linking to the file that renders the design elements -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Linking to our style sheet -->
+    <link rel="stylesheet" href="css/style.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Start Of Header -->
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+            <nav>
+                <i class="fa-solid fa-bars toggle"></i>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Protfolio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+                <div class="form">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End Of Header -->
+
+    <!-- Start Of Landing -->
+    <div class="landing-space">
+        <div class="overlay"></div>
+        <div class="text">
+            <div class="content">
+                <h2>
+                    Hello World! <br>
+                    We Are Kasper We Make Art.
+                </h2>
+                <p>
+                    If you hear a voice within you say you cannot paint, then by all means paint, and that voice will be
+                    silenced. <br>
+                    <span>By : Vincent van Gogh</span>
+                </p>
+            </div>
+        </div>
+        <i class="fas fa-angle-left change-background left"></i>
+        <i class="fas fa-angle-right change-background right"></i>
+        <ul class="circles">
+            <li></li>
+            <li class="active"></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- End Of Landing -->
+
+    <!-- Start Of Services Section -->
+    <div class="services" id="services">
+        <div class="container">
+            <div class="main-heading">
+                <h2>Services</h2>
+                <p>We offer you our services to achieve our goals ( having a world and people full of art ).</p>
+            </div>
+            <div class="services-container">
+                <div class="srv-box">
+                    <i class="fa-solid fa-photo-film"></i>
+                    <div class="text">
+                        <h3>Film Making</h3>
+                        <p>Filmmaking or film production is the process by which a motion picture is produced.
+                            Filmmaking involves a number of complex and discrete stages, beginning with an initial
+                            story, idea, or commission.</p>
+                    </div>
+                </div>
+                <div class="srv-box">
+                    <i class="fa-solid fa-camera-retro"></i>
+                    <div class="text">
+                        <h3>Photography</h3>
+                        <p>Photography is the process of recording an image – a photograph – on lightsensitive film
+                            or, in the case of digital photography, via a digital electronic or magnetic memory.</p>
+                    </div>
+                </div>
+                <div class="srv-box">
+                    <i class="fa-solid fa-music"></i>
+                    <div class="text">
+                        <h3>Music</h3>
+                        <p>
+                            an art of sound in time that expresses ideas and emotions in significant forms through
+                            the elements of rhythm, melody, harmony, and color. the tones or sounds employed,
+                            occurring in single line.</p>
+                    </div>
+                </div>
+                <div class="srv-box">
+                    <i class="fa-solid fa-palette"></i>
+                    <div class="text">
+                        <h3>Painting</h3>
+                        <p>Painting is the practice of applying paint, pigment, color or other medium to a solid
+                            surface The medium is commonly applied to the base with a brush, ...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Of Services Section -->
+
+    <!-- Start Of Design Section -->
+    <div class="design">
+        <div class="text">
+            <h3>Our Goals.....</h3>
+            <ul>
+                <div class="icon-text">
+                    <i class="fa-solid fa-heart"></i>
+                    <li>Have a world full of art</li>
+                </div>
+                <div class="icon-text">
+                    <i class="fa-solid fa-heart"></i>
+                    <li>Open our mind to new things</li>
+                </div>
+                <div class="icon-text">
+                    <i class="fa-solid fa-heart"></i>
+                    <li>Discover our souls</li>
+                </div>
+                <div class="icon-text">
+                    <i class="fa-solid fa-heart"></i>
+                    <li>Have a people can share their feelings</li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!-- End Of Design Section -->
+
+    <!-- Start Of Portfolio Section -->
+    <div class="portfolio" id="portfolio">
+        <div class="main-heading">
+            <h2>
+                Portfolio
+            </h2>
+            <p>It is some of our students worh that helps them discovers themselves... </p>
+        </div>
+        <div class="sections">
+            <div class="active">All</div>
+            <div>Design</div>
+            <div>Painting</div>
+            <div>Photography</div>
+        </div>
+        <div class="images">
+            <div class="img">
+                <p>Painting</p>
+                <img src="images/pro1.jpg">
+            </div>
+            <div class="img">
+                <p>Painting</p>
+                <img src="images/pro2.jpg">
+            </div>
+            <div class="img">
+                <p>Photography</p>
+                <img src="images/pro3.jpg">
+            </div>
+            <div class="img">
+                <p>Painting</p>
+                <img src="images/pro7.jpg">
+            </div>
+            <div class="img">
+                <p>Painting</p>
+                <img src="images/pro8.jpg">
+            </div>
+            <div class="img">
+                <p>Design</p>
+                <img src="images/pro5.jpg">
+            </div>
+            <div class="img">
+                <p>Painting</p>
+                <img src="images/pro9jpg">
+            </div>
+            <div class="img">
+                <p>Design</p>
+                <img src="images/pro4.jpg">
+            </div>
+        </div>
+        <div class="button">
+            <p>More</p>
+        </div>
+    </div>
+    <!-- End Of Portfolio Section -->
+
 
 </body>
 
