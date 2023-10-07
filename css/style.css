@@ -563,7 +563,7 @@ header .container .form i {
 
 .portfolio .button {
     position: relative;
-    margin-top: 50px;
+    margin: 50px 0 100px;
 }
 
 .portfolio .button p {
@@ -579,3 +579,59 @@ header .container .form i {
 }
 
 /* End Of Portfolio Styling */
+
+/* Start Of video ssection Styling */
+.video {
+    position: relative;
+}
+
+.video video {
+    width: 100%;
+}
+
+.video::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0 0 0 / 40%);
+}
+
+.video .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+    min-height: fit-content;
+    max-width: 100%;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #614058b3, #9d7f9454, #c76fa624, #22232361);
+}
+
+.video .text h3 {
+    margin: 60px 0;
+    font-weight: normal;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.video .text a {
+    background-color: black;
+    display: block;
+    width: 100px;
+    margin: 50px auto;
+    padding: 15px 11px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .video {
+        display: none;
+    }
+}
+
+/* End Of video ssection Styling */
