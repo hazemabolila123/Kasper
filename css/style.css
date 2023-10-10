@@ -829,7 +829,7 @@ header .container .form i {
 }
 
 .our-skills .container .test .bullets li.active {
-    background-color: #19c8fa;
+    background-color: var(--main-color);
     border-color: transparent;
 }
 
@@ -859,7 +859,7 @@ header .container .form i {
 .our-skills .container .progress-holder .progress span {
     display: block;
     height: 100%;
-    background-color: #19c8fa;
+    background-color: var(--main-color);
     position: relative;
 }
 
@@ -918,6 +918,16 @@ header .container .form i {
     text-align: center;
 }
 
+@media (min-width: 1399px) {
+    .quote .text {
+        width: 60%;
+        margin: 0 auto;
+        position: relative;
+        color: white;
+        text-align: center;
+    }
+}
+
 .quote .text q {
     font-size: 22px;
     line-height: 1.6;
@@ -930,3 +940,257 @@ header .container .form i {
 }
 
 /* End Of Quote Section */
+
+
+/* Start Of Pricing Section */
+.pricing {
+    padding: var(--section-padding) 0px;
+}
+
+.pricing .plans {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.pricing .plans .plan {
+    background-color: #fcfcfc;
+}
+
+.pricing .plans .plan .head {
+    padding: 20px;
+    border: 1px solid;
+    border-color: var(--main-color) transparent;
+}
+
+.pricing .plans .plan .head h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.pricing .plans .plan .head span {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 30px;
+    position: relative;
+}
+
+.pricing .plans .plan .head span::before {
+    content: "$";
+    position: absolute;
+    font-weight: normal;
+    font-size: 20px;
+    top: -10px;
+    left: -20px;
+}
+
+.pricing .plans .plan ul {
+    border-bottom: 1px solid var(--main-color);
+}
+
+.pricing .plans .plan ul li {
+    border-bottom: 1px solid var(--main-color);
+    width: 70%;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+.pricing .plans .plan ul li:last-child {
+    border-bottom: 0px;
+}
+
+.pricing .plans .plan .head span::after {
+    content: "/Mo";
+    position: absolute;
+    font-weight: normal;
+    font-size: 14px;
+    font-weight: bold;
+    top: 20px;
+    left: 40px;
+}
+
+.pricing .plans .plan .foot {
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    width: fit-content;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.pricing .plans .plan .foot a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+}
+
+.pricing .container .contact {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.pricing .container .contact p {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.pricing .container .contact a {
+    display: block;
+    width: fit-content;
+    background-color: var(--main-color);
+    padding: 20px;
+    margin: 0 auto;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+/* End Of Pricing Section */
+
+
+
+
+/* Start Of ContactUs Section  */
+.contactus {
+    padding: var(--section-padding) 0px;
+}
+
+.contactus .container .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .contactus .container .content {
+        flex-direction: column-reverse;
+    }
+}
+
+.contactus .container .content form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+@media (max-width: 768px) {
+    .contactus .container .content form {
+        width: 100%;
+    }
+}
+
+.contactus .container .content form input:not([type="submit"]),
+.contactus .container .content form textarea {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.contactus .container .content form textarea {
+    height: 200px;
+}
+
+.contactus .container .content form input:focus,
+.contactus .container .content form textarea:focus {
+    outline: none;
+}
+
+.contactus .container .content form input[type="submit"] {
+    padding: 20px;
+    background-color: var(--main-color);
+    border: none;
+    outline: none;
+    color: white;
+    width: 35%;
+    align-self: flex-end;
+}
+
+.contactus .container .content .info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: -70px;
+}
+
+@media (max-width: 768px) {
+    .contactus .container .content .info {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+        height: 350px;
+    }
+}
+
+.contactus .container .content .info>div h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.contactus .container .content .info>div p {
+    color: var(--paragraph);
+    margin-bottom: 10px;
+}
+
+/* End Of ContactUs Section  */
+
+/* Start Of Footer Styling */
+.footer {
+    padding: calc(var(--section-padding) / 2) 0px;
+    background-color: black;
+    background-image: url(../images/subscribe.jpg);
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 60%);
+    top: 0;
+    left: 0;
+}
+
+.footer .container {
+    position: relative;
+}
+
+.footer .container img {
+    margin: 10px 0;
+}
+
+.footer .container p:first-of-type {
+    text-transform: uppercase;
+    font-size: 22px;
+    border-bottom: 1px solid white;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+
+.footer .container div {
+    width: 150px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .container p:last-of-type {
+    margin-top: 60px;
+    font-size: 18px;
+}
+
+.footer .container p:last-of-type span {
+    color: var(--main-color);
+}
+
+/* End Of Footer Styling */
