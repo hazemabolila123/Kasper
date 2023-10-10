@@ -987,6 +987,16 @@ header .container .form i {
     left: -20px;
 }
 
+.pricing .plans .plan .head span::after {
+    content: "/Mo";
+    position: absolute;
+    font-weight: normal;
+    font-size: 14px;
+    font-weight: bold;
+    top: 20px;
+    left: 40px;
+}
+
 .pricing .plans .plan ul {
     border-bottom: 1px solid var(--main-color);
 }
@@ -1000,16 +1010,6 @@ header .container .form i {
 
 .pricing .plans .plan ul li:last-child {
     border-bottom: 0px;
-}
-
-.pricing .plans .plan .head span::after {
-    content: "/Mo";
-    position: absolute;
-    font-weight: normal;
-    font-size: 14px;
-    font-weight: bold;
-    top: 20px;
-    left: 40px;
 }
 
 .pricing .plans .plan .foot {
@@ -1026,18 +1026,18 @@ header .container .form i {
     color: black;
 }
 
-.pricing .container .contact {
+.pricing .contact {
     margin-top: 40px;
     text-align: center;
 }
 
-.pricing .container .contact p {
+.pricing .contact p {
     margin-bottom: 30px;
     font-size: 20px;
     font-weight: 500;
 }
 
-.pricing .container .contact a {
+.pricing .contact a {
     display: block;
     width: fit-content;
     background-color: var(--main-color);
@@ -1095,6 +1095,7 @@ header .container .form i {
 .contactus .container .content form input:focus,
 .contactus .container .content form textarea:focus {
     outline: none;
+    caret-color: var(--main-color);
 }
 
 .contactus .container .content form input[type="submit"] {
@@ -1105,6 +1106,12 @@ header .container .form i {
     color: white;
     width: 35%;
     align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+    .contactus .container .content form input[type="submit"] {
+        width: 40%;
+    }
 }
 
 .contactus .container .content .info {
@@ -1121,6 +1128,7 @@ header .container .form i {
         text-align: center;
         margin: 20px 0;
         height: 350px;
+        margin-top: -50px;
     }
 }
 
@@ -1129,6 +1137,7 @@ header .container .form i {
     font-size: 20px;
     font-weight: normal;
     margin-bottom: 20px;
+    color: var(--transparent-color);
 }
 
 .contactus .container .content .info>div p {
@@ -1137,6 +1146,94 @@ header .container .form i {
 }
 
 /* End Of ContactUs Section  */
+
+/* Start Of Subscribe Section */
+.subscribe {
+    padding: var(--section-padding) 0px;
+    background-color: black;
+    background-image: url(../images/subscribe.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.subscribe::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 60%);
+    left: 0;
+    top: 0;
+}
+
+.subscribe .container {
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:992px) {
+    .subscribe .container {
+        flex-direction: column;
+    }
+}
+
+.subscribe .container>form {
+    display: flex;
+    width: 500px;
+    max-width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.subscribe .container form input[type="email"] {
+    padding: 20px 20px 20px 60px;
+    outline: none;
+    background: transparent;
+    border: 1px solid white;
+    border-right: none;
+    caret-color: var(--main-color);
+    width: calc(100% - 130px);
+}
+
+.subscribe .container form input::placeholder {
+    color: white;
+}
+
+.subscribe .container form input[type="submit"] {
+    width: 130px;
+    padding: 20px 15px;
+    outline: none;
+    background: var(--main-color);
+    border: 1px solid white;
+    border-left: none;
+    caret-color: var(--main-color);
+    color: white;
+}
+
+.subscribe .container form:focus {
+    outline: none;
+}
+
+.subscribe .container form i {
+    position: absolute;
+    font-size: 22px;
+    left: 20px;
+}
+
+.subscribe .container>p {
+    margin-left: 50px;
+    line-height: 1.6;
+}
+
+@media (max-width :992px) {
+    .subscribe .container>p {
+        margin: 30px auto 0 auto;
+    }
+}
+
+/* End Of Subscribe Section */
 
 /* Start Of Footer Styling */
 .footer {
